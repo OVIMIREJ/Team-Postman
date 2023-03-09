@@ -1,0 +1,169 @@
+{
+	"id": "0986c290-f64b-4311-934e-340dfd217183",
+	"name": "API TASK COLLECTION",
+	"timestamp": "2023-03-09T12:17:41.309Z",
+	"collection_id": "25900665-d1cd8a25-29a3-490d-83b2-51bd727e9c82",
+	"folder_id": 0,
+	"environment_id": "25900665-3cd443c1-456f-4495-ac59-8ccaffbdd94c",
+	"totalPass": 12,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2023-03-09T12:17:29.878Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "d8deebff-2431-4eeb-939f-d8c6d456d5d6",
+			"name": "TASK 6",
+			"url": "https://www.getpostman.com/collections/15036f85a35d875ecfdf",
+			"time": 938,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code should be 200": true,
+				"Status code name has string": true
+			},
+			"testPassFailCounts": {
+				"Status code should be 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code name has string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				938
+			],
+			"allTests": [
+				{
+					"Status code should be 200": true,
+					"Status code name has string": true
+				}
+			]
+		},
+		{
+			"id": "5c27fe08-5fae-4528-a670-11517e2f8337",
+			"name": "TASK 7",
+			"url": "https://www.getpostman.com/collections/15036f85a35d875ecfdf",
+			"time": 504,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code should be 200": true,
+				"Status code name has string": true,
+				"Confirm that the order has an ID": true,
+				"confirm the dataMode is params": true,
+				"verify request has a name": true
+			},
+			"testPassFailCounts": {
+				"Status code should be 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code name has string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Confirm that the order has an ID": {
+					"pass": 1,
+					"fail": 0
+				},
+				"confirm the dataMode is params": {
+					"pass": 1,
+					"fail": 0
+				},
+				"verify request has a name": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				504
+			],
+			"allTests": [
+				{
+					"Status code should be 200": true,
+					"Status code name has string": true,
+					"Confirm that the order has an ID": true,
+					"confirm the dataMode is params": true,
+					"verify request has a name": true
+				}
+			]
+		},
+		{
+			"id": "59487285-2167-4cc8-a0ef-7c3ab019fbe7",
+			"name": "TASK 8",
+			"url": "https://www.getpostman.com/collections/15036f85a35d875ecfdf",
+			"time": 515,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code should be 200": true,
+				"Status code name has string": true,
+				"Confirm that the order has an ID": true,
+				"confirm the dataMode is params": true,
+				"verify request has a name": true
+			},
+			"testPassFailCounts": {
+				"Status code should be 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code name has string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Confirm that the order has an ID": {
+					"pass": 1,
+					"fail": 0
+				},
+				"confirm the dataMode is params": {
+					"pass": 1,
+					"fail": 0
+				},
+				"verify request has a name": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				515
+			],
+			"allTests": [
+				{
+					"Status code should be 200": true,
+					"Status code name has string": true,
+					"Confirm that the order has an ID": true,
+					"confirm the dataMode is params": true,
+					"verify request has a name": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1957,
+	"collection": {
+		"requests": [
+			{
+				"id": "d8deebff-2431-4eeb-939f-d8c6d456d5d6",
+				"method": "GET"
+			},
+			{
+				"id": "5c27fe08-5fae-4528-a670-11517e2f8337",
+				"method": "GET"
+			},
+			{
+				"id": "59487285-2167-4cc8-a0ef-7c3ab019fbe7",
+				"method": "GET"
+			}
+		]
+	}
+}
