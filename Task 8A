@@ -1,0 +1,177 @@
+{
+	"info": {
+		"_postman_id": "d1cd8a25-29a3-490d-83b2-51bd727e9c82",
+		"name": "API TASK COLLECTION",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25900665"
+	},
+	"item": [
+		{
+			"name": "ALL GET REQUEST",
+			"item": [
+				{
+					"name": "TASK 6",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code should be 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"    \r",
+									"pm.test(\"Status code name has string\", function () {\r",
+									"    pm.response.to.have.status(\"OK\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://www.getpostman.com/collections/15036f85a35d875ecfdf",
+							"protocol": "https",
+							"host": [
+								"www",
+								"getpostman",
+								"com"
+							],
+							"path": [
+								"collections",
+								"15036f85a35d875ecfdf"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TASK 7",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code should be 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"    \r",
+									"pm.test(\"Status code name has string\", function () {\r",
+									"    pm.response.to.have.status(\"OK\");\r",
+									"});\r",
+									"\r",
+									"var jsonData = pm.response.json();\r",
+									"console.log(jsonData)\r",
+									"console.log(jsonData.order[0])\r",
+									"console.log(jsonData.requests[5].dataMode)\r",
+									"console.log(jsonData.requests[10].name)\r",
+									"\r",
+									"\r",
+									"\r",
+									"pm.test(\"Confirm that the order has an ID\", function () {\r",
+									"    pm.expect(jsonData.order[0]).to.eql(\"acd9e54c-f8ff-49ce-92c5-bd4ca1d3ca36\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"confirm the dataMode is params\", function () {\r",
+									" pm.expect(jsonData.requests[5].dataMode).to.eql(\"params\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"verify request has a name\", function () {\r",
+									"    pm.expect(jsonData.requests[10].name).to.eql(\"example.com with POST\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://www.getpostman.com/collections/15036f85a35d875ecfdf",
+							"protocol": "https",
+							"host": [
+								"www",
+								"getpostman",
+								"com"
+							],
+							"path": [
+								"collections",
+								"15036f85a35d875ecfdf"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TASK 8",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var jsonData = pm.response.json();\r",
+									"console.log(jsonData.order[0])\r",
+									"pm.environment.set(\"entityId\", jsonData.order[0]);\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"pm.test(\"Status code should be 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"    \r",
+									"pm.test(\"Status code name has string\", function () {\r",
+									"    pm.response.to.have.status(\"OK\");\r",
+									"});\r",
+									"\r",
+									"\r",
+									"console.log(jsonData)\r",
+									"console.log(jsonData.order[0])\r",
+									"console.log(jsonData.requests[5].dataMode)\r",
+									"console.log(jsonData.requests[10].name)\r",
+									"\r",
+									"\r",
+									"\r",
+									"pm.test(\"Confirm that the order has an ID\", function () {\r",
+									"    pm.expect(jsonData.order[0]).to.eql(\"acd9e54c-f8ff-49ce-92c5-bd4ca1d3ca36\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"confirm the dataMode is params\", function () {\r",
+									" pm.expect(jsonData.requests[5].dataMode).to.eql(\"params\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"verify request has a name\", function () {\r",
+									"    pm.expect(jsonData.requests[10].name).to.eql(\"example.com with POST\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/collections/15036f85a35d875ecfdf",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"collections",
+								"15036f85a35d875ecfdf"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
